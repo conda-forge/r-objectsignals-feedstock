@@ -13,7 +13,6 @@ source:
   sha256: 1c011090d784b173038710b6d29c6121d23a5c328092bd47c2e2db1103768fe5
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
   number: 1002
   noarch: generic
@@ -23,7 +22,6 @@ build:
 
 requirements:
   build:
-
   host:
     - r-base
   run:
@@ -36,7 +34,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=objectSignals
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: A mutable Signal object can report changes to its state, clients could register functions
     so that they are called whenever the signal is emited. The signal could be emited,
     disconnected, blocked, unblocked, and buffered.
@@ -46,12 +44,6 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
 
 # Package: objectSignals
 # License: GPL (>= 2)
